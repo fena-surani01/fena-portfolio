@@ -241,28 +241,8 @@ h3 {
   gap: 64px;
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--card);
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #34d399;
-  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
-}
-
 .hero-hello {
-  margin-top: 28px;
+  margin-top: 0;
   color: var(--muted);
   font-size: 1.1rem;
   font-weight: 500;

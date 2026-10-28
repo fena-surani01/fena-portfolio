@@ -5,9 +5,6 @@ export default function Hero() {
     <section id="top" className="hero">
       <div className="container hero-grid">
         <div className="hero-content">
-          <span className="badge">
-            <span className="dot" /> Available for part-time work
-          </span>
           <p className="hero-hello">Hello, I'm</p>
           <h1 className="hero-name">{profile.name}</h1>
           <h2 className="hero-role">{profile.role}</h2>
