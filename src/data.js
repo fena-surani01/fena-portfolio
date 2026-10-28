@@ -6,13 +6,13 @@ export const profile = {
   role: 'Full Stack Developer',
   tagline:
     'I turn ideas into fast, reliable web applications. From robust Laravel and Node.js back ends to clean, responsive React interfaces, I build products end to end and use AI-assisted development to ship faster without cutting corners.',
-  location: 'India', // TODO: add your city, e.g. "Ahmedabad, Gujarat"
+  location: 'Ahmedabad, Gujarat, India',
   email: 'suranifena@gmail.com',
   phone: '+91 70165 71043',
   photo: '/profile.webp',
   resumeUrl: '', // TODO: put resume.pdf in /public and set this to "/resume.pdf"
   socials: {
-    linkedin: 'https://www.linkedin.com/in/your-profile-id', // TODO: your LinkedIn profile id
+    linkedin: 'https://www.linkedin.com/in/fena-surani',
   },
 };
 
@@ -62,7 +62,7 @@ export const details = [
   { label: 'Company', value: 'Inextrix Technologies' },
   { label: 'Experience', value: '1.5 Years' },
   { label: 'Education', value: 'BCA' },
-  { label: 'Location', value: 'India' }, // TODO: your city
+  { label: 'Location', value: 'Ahmedabad, Gujarat' },
   { label: 'Email', value: 'suranifena@gmail.com' },
   { label: 'Phone', value: '+91 70165 71043' },
 ];
