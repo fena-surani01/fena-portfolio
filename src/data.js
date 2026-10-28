@@ -158,7 +158,11 @@ export const projects = [
         ],
       },
     ],
-    integrations: ['Telegram automation', 'Email notifications'],
+    integrations: [
+      'Telegram automation',
+      'Email notifications',
+      'ImageKit for online image hosting and management',
+    ],
     tech: ['Node.js', 'Express.js', 'MERN (in progress)'], // TODO: add your database / template engine
     link: '', // TODO: Fenaria website link
     linkLabel: 'Explore Fenaria',
