@@ -1,0 +1,8 @@
+node_modules
+dist
+
+# Original photos (the site uses the cropped public/profile.webp)
+shared image*
+
+# Empty scratch file
+sd
