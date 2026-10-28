@@ -127,6 +127,7 @@ export const projects = [
     type: 'Personal Project',
     featured: true,
     status: 'Work in progress',
+    statusType: 'progress', // progress | active | done
     statusNote: 'Built fully in Node.js, now being migrated to the MERN stack.',
     description:
       'An online art platform for selling artwork and handling custom art orders, with three dedicated portals for admins, artists and customers.',
@@ -170,6 +171,8 @@ export const projects = [
   {
     title: 'ViciDial',
     type: 'Office Project · Senior Role',
+    status: 'Currently working',
+    statusType: 'active',
     description:
       'Customisation and integration work on ViciDial, the open-source call-center platform, for company clients.',
     points: [
@@ -182,6 +185,8 @@ export const projects = [
   {
     title: 'Pet Shop Website',
     type: 'College Project',
+    status: 'Completed',
+    statusType: 'done',
     description: 'A pet shop website with separate admin and customer portals.',
     points: [
       'Admin: add and manage pet products',

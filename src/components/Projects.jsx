@@ -11,16 +11,21 @@ function Tags({ items }) {
   );
 }
 
+function Status({ p }) {
+  if (!p.status) return null;
+  return (
+    <span className={`status ${p.statusType || ''}`}>
+      <span className="status-dot" /> {p.status}
+    </span>
+  );
+}
+
 function FeaturedProject({ p }) {
   return (
     <article className="card project featured">
       <div className="project-top">
         <p className="project-type">{p.type}</p>
-        {p.status && (
-          <span className="status">
-            <span className="status-dot" /> {p.status}
-          </span>
-        )}
+        <Status p={p} />
       </div>
 
       <h3>{p.title}</h3>
@@ -63,7 +68,10 @@ function FeaturedProject({ p }) {
 function Project({ p }) {
   return (
     <article className="card project">
-      <p className="project-type">{p.type}</p>
+      <div className="project-top">
+        <p className="project-type">{p.type}</p>
+        <Status p={p} />
+      </div>
       <h3>{p.title}</h3>
       <p className="muted project-desc">{p.description}</p>
       {p.points && (
