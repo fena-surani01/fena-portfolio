@@ -1,3 +1,4 @@
+import Icon from './Icon.jsx';
 import { profile } from '../data.js';
 
 export default function Hero() {
@@ -26,12 +27,22 @@ export default function Hero() {
             <img src={profile.photo} alt={profile.name} width="800" height="1000" />
           </div>
           <div className="float-card float-top">
-            <strong>1.5 Years</strong>
-            <span>Experience</span>
+            <span className="float-icon">
+              <Icon name="briefcase" />
+            </span>
+            <div>
+              <span className="float-label">Experience</span>
+              <strong>1.5 Years</strong>
+            </div>
           </div>
           <div className="float-card float-bottom">
-            <strong>PHP · Laravel · MERN</strong>
-            <span>Full Stack</span>
+            <span className="float-icon">
+              <Icon name="code" />
+            </span>
+            <div>
+              <span className="float-label">Full Stack</span>
+              <strong>PHP · Laravel · MERN</strong>
+            </div>
           </div>
         </div>
       </div>

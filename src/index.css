@@ -304,23 +304,69 @@ h3 {
 
 .float-card {
   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px 10px 10px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgba(20, 20, 32, 0.92), rgba(20, 20, 32, 0.92)) padding-box,
+    var(--gradient) border-box;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    0 18px 40px -14px rgba(0, 0, 0, 0.8),
+    0 0 28px -10px rgba(139, 108, 255, 0.6);
+  animation: float 5s ease-in-out infinite;
+}
+
+.float-card > div {
   display: grid;
-  padding: 12px 18px;
-  border-radius: 14px;
-  background: rgba(23, 23, 36, 0.92);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6);
-  line-height: 1.35;
+  line-height: 1.25;
+}
+
+.float-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: 0 6px 16px -6px rgba(139, 108, 255, 0.8);
+}
+
+.float-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.float-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
 }
 
 .float-card strong {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
-.float-card span {
-  font-size: 0.78rem;
-  color: var(--muted);
+@keyframes float {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-card {
+    animation: none;
+  }
 }
 
 .float-top {
@@ -329,6 +375,7 @@ h3 {
 }
 
 .float-bottom {
+  animation-delay: -2.5s;
   bottom: 40px;
   right: -36px;
 }
@@ -995,7 +1042,28 @@ h3 {
   }
 
   .float-card {
-    padding: 8px 12px;
+    gap: 9px;
+    padding: 7px 12px 7px 7px;
+    border-radius: 13px;
+  }
+
+  .float-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+  }
+
+  .float-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .float-label {
+    font-size: 0.6rem;
+  }
+
+  .float-card strong {
+    font-size: 0.85rem;
   }
 
   .float-top {
