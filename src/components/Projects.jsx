@@ -55,7 +55,7 @@ function FeaturedProject({ p }) {
         <Tags items={p.tech} />
         {p.link ? (
           <a href={p.link} target="_blank" rel="noreferrer" className="btn btn-primary">
-            {p.linkLabel} ↗
+            {p.linkLabel}
           </a>
         ) : (
           <span className="btn btn-ghost btn-disabled">Link coming soon</span>

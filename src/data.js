@@ -123,7 +123,7 @@ export const experience = [
 // Projects are shown in this order. The one with `featured: true` gets the large card.
 export const projects = [
   {
-    title: 'Fenaria',
+    title: 'Fenaria ☘︎˖',
     type: 'Personal Project',
     featured: true,
     status: 'Work in progress',
@@ -165,8 +165,8 @@ export const projects = [
       'ImageKit for online image hosting and management',
     ],
     tech: ['Node.js', 'Express.js', 'MERN (in progress)'], // TODO: add your database / template engine
-    link: '', // TODO: Fenaria website link
-    linkLabel: 'Explore Fenaria',
+    link: 'https://art-mvgj.onrender.com/',
+    linkLabel: 'Explore Fenaria ☘︎˖',
   },
   {
     title: 'ViciDial',
